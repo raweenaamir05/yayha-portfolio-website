@@ -33,7 +33,7 @@ img {
   z-index: 1000;
 }
 .logo {
-  height: 70px;
+  height: 50px;
 }
 .nav-center ul {
   list-style: none;
@@ -42,29 +42,32 @@ img {
 }
 .nav-center ul li a {
   font-weight: 500;
+  font-size: 13px;
 }
 .btn.get-in-touch {
   background: #00aff0;
   color: white;
-  padding: 12px 22px;
+  padding: 10px 16px;
   border-radius: 35px;
   font-weight: 600;
   transition: transform 0.2s ease, background-color 0.3s ease;
   display: inline-block;
+  font-size: 13px;
 }
 .btn.get-in-touch:hover {
   background: #000;
   transform: scale(0.95);
 }
 .btn.get-in-touch i{
-  font-size: 20px;
-  margin-left: 10px;
+  font-size: 18px;
+  margin-left: 8px;
   margin-right: 10px;
 }
 /* HERO SECTION */
 .hero {
   padding-top: 120px;
   padding-bottom: 80px;
+  padding-left: 50px;
 }
 .hero-content {
   max-width: 1200px;
@@ -82,7 +85,7 @@ img {
   text-align: left;
 }
 .hero-text h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 20px;
@@ -142,17 +145,18 @@ img {
 
 
 .hero-text p {
-  font-size: 18pxpx;
+  font-size: 13px;
   margin-bottom: 40px;
 }
 .btn.skype {
   background: #00aff0;
   color: white;
-  padding: 14px 28px;
+  padding: 10px 18px;
   border-radius: 35px;
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-block;
+  font-size: 12px;
 }
 .btn.skype:hover {
   background: #000;
@@ -168,7 +172,7 @@ img {
 /* SECTION WRAPPER */
 
 .section h2 {
-  font-size: 2.2rem;
+  font-size: 28px;
   font-weight: 700;
 }
 .section h2 .sketch-underline::after {
@@ -242,7 +246,7 @@ img {
 }
 
 .service-card i {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
@@ -257,16 +261,22 @@ img {
   transform: translateY(-60px);
 }
 .service-card h3{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 20px;
 }
+.service-card p{
+  font-size: 13px;
+}
+
+
+
 /* --------------work------------- */
 #work{
     padding: 100px 100px;
 }
 #work h2 {
-  font-size: 2rem;
+  font-size: 28px;
   font-weight: 700;
   overflow: visible;
 }
@@ -305,9 +315,12 @@ img {
     transition: height 0.5s;
 }
 .layer h3{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 20px;
+}
+.layer p{
+  font-size: 11px;
 }
 
 .work:hover{
@@ -319,10 +332,10 @@ img {
 }
 /* Results Scroll Section */
 #results{
-  padding: 100px 100px;
+  padding: 100px 80px;
 }
 #results h2{
-  font-size: 38px;
+  font-size: 28px;
   margin-bottom: 80px;
 }
 #results h2 .sketch-underline::after{
@@ -369,7 +382,7 @@ img {
 }
 
 .result-img {
-  height: 600px;
+  height: 500px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -442,58 +455,38 @@ img {
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    height: 415px;
 }
 .about-col-2{
     flex-basis: 50%;
-    margin-top: 20px;
+    margin-top: 15px;
     padding-left: 15px;
 }
-.sub-title{
-    font-size: 45px;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 20px;
-}
+
 .about-col-2 p{
   margin-bottom: 20px;
+  font-size: 13px;
 }
 .about-col-2 h2{
-  margin-bottom: 60px;
+  font-weight: 600;
+  margin-bottom: 50px;
   line-height: 1.1;
-  font-size: 35px;
+  font-size: 28px;
 }
 .about-col-2 h2 .sketch-underline::after{
   bottom: -15px;
 }
 /* --------------contact-------------- */
 #contact .container{
-    padding: 150px 100px;
-    background-image: url('images/contact-background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-    overflow: hidden;
-    position: relative;
+    padding: 100px 130px;
+    background-color:white;
+    color: black;
 } 
 
-#contact .container::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
-  z-index: 1;
-}
-#contact .container .row{
-  position: relative;
-  z-index: 2;
-}
 .contact-left .sub-title{
-  color: white;
   line-height: 1.4;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 .contact-left{
     flex-basis: 35%;
@@ -504,15 +497,16 @@ img {
 }
 .contact-left p{
     margin-top: 30px;
+    font-size: 12px;
 } 
 .contact-left p a i{
     color: #00aff0;
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 15px;
     cursor: pointer;
 }
 .contact-left p a i:hover{
-    color:white;
+    color:black;
 }
 .social-icons{
     margin-top: 30px
@@ -521,7 +515,7 @@ img {
     text-decoration: none;
     font-size: 20px;
     margin-right: 15px;
-    color: white;
+    color: black;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -535,24 +529,26 @@ img {
 }
 form input, form textarea{
     width: 100%;
-    border: 0;
     outline: none;
-    background: white;
-    padding: 15px;
-    margin: 15px 0;
+    background: #eee;
+    padding: 12px;
+    margin: 10px 0;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 12px;
+    color: #333;
+    border: none;
 }
 .btn-contact-form{
   background: #00aff0;
   color: white;
-  padding: 12px 30px;
-  border-radius: 30px;
+  padding: 8px 22px;
+  border-radius: 28px;
   font-weight: 600;
   transition: transform 0.2s ease, background-color 0.3s ease;
   display: inline-block;
-  margin-bottom: 70px;
   border: none;
+  font-size: 12px;
+  cursor: pointer;
 }
 .btn-contact-form:hover{
   background: #000;
@@ -562,9 +558,175 @@ form input, form textarea{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 20px 0 10px;
+    padding: 10px 0;
     background-color: black;
     color: white;
     font-size: 10px;
     font-weight: 100;
+}
+
+/* -------calendly--------- */
+#calendly {
+  text-align: center;
+  color: white;
+  background-image: url('images/contact-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+
+#calendly .container{
+   position: relative;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, 0.5); 
+   padding: 100px;
+}
+
+
+#calendly h2 {
+  font-size: 35px;
+  margin-bottom: 60px;
+  line-height: 1.3;
+}
+#calendly h2 span{
+  display: block;
+}
+
+.calendly-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 600px; /* Match Calendly widget height */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: white;
+}
+
+/* Left Side */
+.calendly-left {
+  min-width: 300px;
+  max-width: 400px;
+  padding: 40px;
+  text-align: left;
+  border-right: 1px solid #ddd;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-basis: 50%;
+}
+
+/* Left Text Styling */
+.calendly-left h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.calendly-left p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Right Side */
+.calendly-right {
+  flex-basis: 50%;
+  min-width: 400px;
+  height: 100%; /* Match container */
+  box-sizing: border-box;
+}
+
+.calendly-inline-widget {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+/* ---------testimonial------- */
+
+#testimonials {
+  padding: 80px 80px;
+  text-align: left;
+  background-image: url('images/testimonial-background.png');
+  background-size: cover;
+  z-index: 1;
+  background-position: center;
+}
+#testimonials .container{
+  position: relative;
+  z-index:2;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-heading h2 span {
+  position: relative;
+}
+
+.section-heading p {
+  color: #444;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.testimonial-list {
+  display: block;
+}
+
+.testimonial-card {
+  padding: 30px 25px;
+  width: 100%;
+  text-align: left;
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 1px solid #000;
+}
+
+.testimonial-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+
+}
+
+.testimonial-card span {
+  font-size: 12px;
+  color: #333;
+}
+
+.testimonial-card p {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+.testimonial-card img, .client-info{
+  display: inline-block;
+}
+.client-info{
+  position: relative;
+  padding-left: 15px;
+  line-height: 1.2;
+   transform: translateY(-8px);
 }
