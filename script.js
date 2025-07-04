@@ -46,3 +46,21 @@ scrollContainer.addEventListener("scroll", () => {
 window.addEventListener("load", () => {
   scrollLeftBtn.style.display = "none"; // at start
 });
+// connecting contact form to google sheets
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxnpZjeWmkqv_gPOMrrjMfyV6vSfuCD9uZIVVOW0sXsH530PWCU4rFIx4IqTiFyOU5w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
